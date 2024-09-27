@@ -1,0 +1,386 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		A3B6412C2CA6948900941519 /* Installer */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = A3B6413F2CA694E500941519 /* Build configuration list for PBXAggregateTarget "Installer" */;
+			buildPhases = (
+				A3B641302CA694D400941519 /* ShellScript */,
+			);
+			dependencies = (
+				A3B641702CA695F600941519 /* PBXTargetDependency */,
+			);
+			name = Installer;
+			productName = Installer;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		32A4FEBC0562C75700D090E7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
+		32A4FEBE0562C75700D090E7 /* XNUOnAMD.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A224C3CFF42312311CA2CB7 /* XNUOnAMD.c */; settings = {ATTRIBUTES = (); }; };
+		A34795172CA3DF8600DFEE0C /* Impl.s in Sources */ = {isa = PBXBuildFile; fileRef = A34795162CA3DF8600DFEE0C /* Impl.s */; };
+		A34795722CA3ED0400DFEE0C /* mach_stuff.h in Headers */ = {isa = PBXBuildFile; fileRef = A34795712CA3ED0400DFEE0C /* mach_stuff.h */; };
+		A3A2F0C92CA5E99A00FB46C6 /* disasm.h in Headers */ = {isa = PBXBuildFile; fileRef = A3A2F0C82CA5E99A00FB46C6 /* disasm.h */; };
+		A3A2F0FB2CA5EEB600FB46C6 /* disasm.c in Sources */ = {isa = PBXBuildFile; fileRef = A3A2F0FA2CA5EEB600FB46C6 /* disasm.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A3B6416F2CA695F600941519 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 089C1669FE841209C02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32A4FEB80562C75700D090E7;
+			remoteInfo = XNUOnAMD;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		089C167EFE841241C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1A224C3CFF42312311CA2CB7 /* XNUOnAMD.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = XNUOnAMD.c; sourceTree = "<group>"; };
+		32A4FEC30562C75700D090E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32A4FEC40562C75800D090E7 /* XNUOnAMD.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XNUOnAMD.kext; sourceTree = BUILT_PRODUCTS_DIR; };
+		A34795162CA3DF8600DFEE0C /* Impl.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = Impl.s; sourceTree = "<group>"; };
+		A34795712CA3ED0400DFEE0C /* mach_stuff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mach_stuff.h; sourceTree = "<group>"; };
+		A3A2F0C82CA5E99A00FB46C6 /* disasm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = disasm.h; sourceTree = "<group>"; };
+		A3A2F0FA2CA5EEB600FB46C6 /* disasm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = disasm.c; sourceTree = "<group>"; };
+		A3A2F0FC2CA5EF0100FB46C6 /* table.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = table.inc; sourceTree = "<group>"; };
+		A3B65A7E2CA684CD00BCE443 /* pl.nelz.xnuonamd.XNUOnAMD.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = pl.nelz.xnuonamd.XNUOnAMD.plist; sourceTree = "<group>"; };
+		D27513B306A6225300ADB3A4 /* Kernel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kernel.framework; path = /System/Library/Frameworks/Kernel.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		32A4FEBF0562C75700D090E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* XNUOnAMD */ = {
+			isa = PBXGroup;
+			children = (
+				A3B641402CA6950900941519 /* Installer */,
+				247142CAFF3F8F9811CA285C /* Source */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				D27513B306A6225300ADB3A4 /* Kernel.framework */,
+				19C28FB6FE9D52B211CA2CBB /* Products */,
+			);
+			name = XNUOnAMD;
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				32A4FEC30562C75700D090E7 /* Info.plist */,
+				089C167DFE841241C02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		19C28FB6FE9D52B211CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32A4FEC40562C75800D090E7 /* XNUOnAMD.kext */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		247142CAFF3F8F9811CA285C /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				A3B65A622CA6822300BCE443 /* Disasm */,
+				1A224C3CFF42312311CA2CB7 /* XNUOnAMD.c */,
+				A34795162CA3DF8600DFEE0C /* Impl.s */,
+				A34795712CA3ED0400DFEE0C /* mach_stuff.h */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		A3B641402CA6950900941519 /* Installer */ = {
+			isa = PBXGroup;
+			children = (
+				A3B65A7E2CA684CD00BCE443 /* pl.nelz.xnuonamd.XNUOnAMD.plist */,
+			);
+			name = Installer;
+			sourceTree = "<group>";
+		};
+		A3B65A622CA6822300BCE443 /* Disasm */ = {
+			isa = PBXGroup;
+			children = (
+				A3A2F0C82CA5E99A00FB46C6 /* disasm.h */,
+				A3A2F0FA2CA5EEB600FB46C6 /* disasm.c */,
+				A3A2F0FC2CA5EF0100FB46C6 /* table.inc */,
+			);
+			name = Disasm;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		32A4FEBA0562C75700D090E7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A34795722CA3ED0400DFEE0C /* mach_stuff.h in Headers */,
+				A3A2F0C92CA5E99A00FB46C6 /* disasm.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		32A4FEB80562C75700D090E7 /* XNUOnAMD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB91C308733DAC0010E9CD /* Build configuration list for PBXNativeTarget "XNUOnAMD" */;
+			buildPhases = (
+				32A4FEBA0562C75700D090E7 /* Headers */,
+				32A4FEBB0562C75700D090E7 /* Resources */,
+				32A4FEBD0562C75700D090E7 /* Sources */,
+				32A4FEBF0562C75700D090E7 /* Frameworks */,
+				32A4FEC00562C75700D090E7 /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XNUOnAMD;
+			productInstallPath = "$(SYSTEM_LIBRARY_DIR)/Extensions";
+			productName = XNUOnAMD;
+			productReference = 32A4FEC40562C75800D090E7 /* XNUOnAMD.kext */;
+			productType = "com.apple.product-type.kernel-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = Julia;
+			};
+			buildConfigurationList = 1DEB91C708733DAC0010E9CD /* Build configuration list for PBXProject "XNUOnAMD" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 089C166AFE841209C02AAC07 /* XNUOnAMD */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A3B6412C2CA6948900941519 /* Installer */,
+				32A4FEB80562C75700D090E7 /* XNUOnAMD */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		32A4FEBB0562C75700D090E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32A4FEBC0562C75700D090E7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		32A4FEC00562C75700D090E7 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A3B641302CA694D400941519 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/pl.nelz.xnuonamd.XNUOnAMD.plist",
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/pl.nelz.xnuonamd.XNUOnAMD.plist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "plutil -convert binary1 -o \"${BUILT_PRODUCTS_DIR}/pl.nelz.xnuonamd.XNUOnAMD.plist\" \"${SRCROOT}/pl.nelz.xnuonamd.XNUOnAMD.plist\" || exit 1";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32A4FEBD0562C75700D090E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32A4FEBE0562C75700D090E7 /* XNUOnAMD.c in Sources */,
+				A34795172CA3DF8600DFEE0C /* Impl.s in Sources */,
+				A3A2F0FB2CA5EEB600FB46C6 /* disasm.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A3B641702CA695F600941519 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32A4FEB80562C75700D090E7 /* XNUOnAMD */;
+			targetProxy = A3B6416F2CA695F600941519 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C167DFE841241C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C167EFE841241C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB91C408733DAC0010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions";
+				MODULE_NAME = com.yourcompany.kext.XNUOnAMD;
+				MODULE_START = XNUOnAMD_start;
+				MODULE_STOP = XNUOnAMD_stop;
+				MODULE_VERSION = 1.0.0d1;
+				PRODUCT_NAME = XNUOnAMD;
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Debug;
+		};
+		1DEB91C508733DAC0010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions";
+				MODULE_NAME = com.yourcompany.kext.XNUOnAMD;
+				MODULE_START = XNUOnAMD_start;
+				MODULE_STOP = XNUOnAMD_stop;
+				MODULE_VERSION = 1.0.0d1;
+				PRODUCT_NAME = XNUOnAMD;
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Release;
+		};
+		1DEB91C808733DAC0010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "/Library/Extensions/Lilu.kext/Contents/Resources/**/**";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "";
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+				VALID_ARCHS = i386;
+			};
+			name = Debug;
+		};
+		1DEB91C908733DAC0010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "";
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+				VALID_ARCHS = i386;
+			};
+			name = Release;
+		};
+		A3B6412D2CA6948900941519 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = Installer;
+			};
+			name = Debug;
+		};
+		A3B6412E2CA6948900941519 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = Installer;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB91C308733DAC0010E9CD /* Build configuration list for PBXNativeTarget "XNUOnAMD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91C408733DAC0010E9CD /* Debug */,
+				1DEB91C508733DAC0010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB91C708733DAC0010E9CD /* Build configuration list for PBXProject "XNUOnAMD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91C808733DAC0010E9CD /* Debug */,
+				1DEB91C908733DAC0010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3B6413F2CA694E500941519 /* Build configuration list for PBXAggregateTarget "Installer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3B6412D2CA6948900941519 /* Debug */,
+				A3B6412E2CA6948900941519 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}

@@ -1,0 +1,12 @@
+{
+	KeepAlive = NO;
+	Label = "pl.nelz.xnuonamd.XNUOnAMD";
+	ProgramArguments = (
+		"/sbin/kextload",
+		"/System/Library/Extensions/XNUOnAMD.kext",
+	);
+	RunAtLoad = YES;
+	StandardErrorPath = "/dev/null";
+	StandardOutPath = "/dev/null";
+	UserName = root;
+}

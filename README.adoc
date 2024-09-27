@@ -1,0 +1,7 @@
+= XNU on AMD
+
+This is a kernel extension that allows running 32-bit application under the vanilla (stock) Snow Leopard kernel on AMD Ryzen, intended for use with VMware.
+
+== Disclaimer
+
+Files related to the length disassembler come from a 1998 MS-DOS project by a VX'r z0mbie/29a. I decided to leave the swear words intact out of respect to the original author(s). This is the smallest working length disassembler I could find.
